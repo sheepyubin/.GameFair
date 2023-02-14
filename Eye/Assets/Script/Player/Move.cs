@@ -31,14 +31,16 @@ public class Move : MonoBehaviour
     {
         isground = Physics2D.OverlapCircle(pos.position, radius, layer); //땅에 닿았는가?
 
-        if(Input.GetKeyDown("c"))
+        if(isground == false)
             anim.SetBool("isJump", true);
+
         if (isground == true && Input.GetKeyDown("c") && Jumpcnt > 0) //점프 1
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
         }
         if (isground == false && Input.GetKeyDown("c") && Jumpcnt > 0) //점프 2
         {
+            anim.SetBool("isJump", true);
             rigid.AddForce(Vector2.up * jumpPower * 0.8f, ForceMode2D.Impulse);
 
         }
@@ -57,11 +59,21 @@ public class Move : MonoBehaviour
             rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
 
         }
+
         if (Mathf.Abs(rigid.velocity.x) < 0.01) //Idle or walk
             anim.SetBool("isWalk", false);
         else
-            anim.SetBool("isWalk", true);   
+            anim.SetBool("isWalk", true);
 
+        if (Input.GetKeyDown("z"))//공격모션
+        {
+            anim.SetBool("isAttack", true);
+        }
+    }
+
+    public void IdleAnimation_A()
+    {
+        anim.SetBool("isAttack", false);
     }
 
     private void OnDrawGizmos()
