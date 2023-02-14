@@ -6,7 +6,7 @@ public class CamMove : MonoBehaviour
 {
     private Vector3 cameraPosition;
     [SerializeField]
-    GameObject Player;
+    Transform Player;
 
     [SerializeField]
     Vector2 center;
@@ -14,19 +14,19 @@ public class CamMove : MonoBehaviour
     Vector2 mapSize;
 
     [SerializeField]
-    float cameraMoveSpeed;
+    float smoothing = 0.2f;
     float height;
     float width;
     void Start()
     {
-        cameraPosition= Player.transform.position;
         height = Camera.main.orthographicSize;
         width = height * Screen.width / Screen.height;
     }
 
     void FixedUpdate()
     {
-        transform.position = Player.transform.position + cameraPosition;
+        Vector3 targetPos = new Vector3(Player.position.x, Player.position.y, this.transform.position.z);
+        transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
         LimitCameraArea();
     }
 

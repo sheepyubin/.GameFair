@@ -702,10 +702,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba03cc640e98704bad5a9f5ccc2e7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 89868172}
+  Player: {fileID: 89868176}
   center: {x: -1.6, y: 4.98}
   mapSize: {x: 36.09, y: 7.28}
-  cameraMoveSpeed: 3
+  smoothing: 0.2
 --- !u!1 &477369591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,10 +1569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba03cc640e98704bad5a9f5ccc2e7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 89868172}
+  Player: {fileID: 89868176}
   center: {x: 87.5, y: 4.91}
   mapSize: {x: 40.85, y: 6.93}
-  cameraMoveSpeed: 3
+  smoothing: 0.2
 --- !u!1 &1503993666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +1965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   to: {fileID: 1947423373}
+  cam1: {fileID: 328154547}
+  cam2: {fileID: 1441136111}
 --- !u!61 &1880978957
 BoxCollider2D:
   m_ObjectHideFlags: 0
