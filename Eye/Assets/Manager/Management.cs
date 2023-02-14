@@ -23,6 +23,6 @@ public class Management : MonoBehaviour
     }
     void Update()
     {
-        if()
+        //if()
     }
 }
