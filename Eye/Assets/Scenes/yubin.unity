@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bea477d169375f4c9a48dd091ec2b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 8
+  maxSpeed: 11
   jumpPower: 15
   Range: {x: 0, y: 0}
   pos: {fileID: 1060216413}
@@ -587,9 +587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ce41eaca3c0374e80249ab8c5787ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam1: {fileID: 328154547}
-  cam2: {fileID: 1441136111}
-  Plyaer: {fileID: 89868172}
 --- !u!4 &308729059
 Transform:
   m_ObjectHideFlags: 0
