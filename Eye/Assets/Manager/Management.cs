@@ -12,19 +12,19 @@ public class Management : MonoBehaviour
 
     byte stage;
 
-    int stage1_monster; //스테이지1 몬스터 마리수
-    bool Isstage1_boss; //스테이지1 중간보스
-    [SerializeField] GameObject stage1_boss;    //스테이지1 보스
+    int stage1_monster;                         //스테이지1 몬스터 마리수
+    [SerializeField] GameObject stage1_boss;    //스테이지1 중간보스
+    public static bool Isstage1_walll;          //스테이지1 벽 T/F
     [SerializeField] GameObject stage1_wall;    //스테이지1 벽
     
-    int stage2_monster; //스테이지2 몬스터 마리수
-    bool Isstage2_boss; //스테이지2 중간보스
-    [SerializeField] GameObject stage2_boss;    //스테이지2 보스
+    int stage2_monster;                         //스테이지2 몬스터 마리수
+    [SerializeField] GameObject stage2_boss;    //스테이지2 중간보스
+    public static bool Isstage2_walll;          //스테이지2 벽 T/F
     [SerializeField] GameObject stage2_wall;    //스테이지2 벽
 
-    int stahe3_monster; //스테이지3 몬스터 마리수
-    bool Isstahe3_boss; //스테이지3 중간보스
-    [SerializeField] GameObject stage3_boss;    //스테이지3 보스
+    int stahe3_monster;                         //스테이지3 몬스터 마리수
+    [SerializeField] GameObject stage3_boss;    //스테이지3 중간보스
+    public static bool Isstage3_walll;          //스테이지3 벽 T/F
     [SerializeField] GameObject stage3_wall;    //스테이지3 벽
 
     void Start()
@@ -66,7 +66,7 @@ public class Management : MonoBehaviour
             case 1:
                 if(stage1_monster < 0)
                 {
-                    invoke()
+                    Instantiate(stage1_boss);
                 }
                 break;
             case 2:
