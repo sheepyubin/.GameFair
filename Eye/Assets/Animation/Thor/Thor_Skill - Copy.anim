@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thor_Idle
+  m_Name: Thor_Skill - Copy
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,15 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1517323593, guid: aad6ba1ee4517a64d972eb594c7ec95c, type: 3}
+      value: {fileID: 21300000, guid: 71172071412687d4d8ad065fd5b34f9e, type: 2}
     - time: 0.083333336
-      value: {fileID: 843840235, guid: aad6ba1ee4517a64d972eb594c7ec95c, type: 3}
+      value: {fileID: 21300000, guid: d6fe27500af189a4c959713567c019a9, type: 2}
     - time: 0.16666667
-      value: {fileID: -37809760, guid: aad6ba1ee4517a64d972eb594c7ec95c, type: 3}
+      value: {fileID: 21300000, guid: 0f8c7610ad8c78e449523488a595b291, type: 2}
     - time: 0.25
-      value: {fileID: 645298420, guid: aad6ba1ee4517a64d972eb594c7ec95c, type: 3}
+      value: {fileID: 21300000, guid: 072f236840097af4283de02e3a0c9504, type: 2}
     - time: 0.33333334
-      value: {fileID: 1609703521, guid: aad6ba1ee4517a64d972eb594c7ec95c, type: 3}
+      value: {fileID: 21300000, guid: 3835ee105bb00b343a6346b48cbafa46, type: 2}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -65,4 +65,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.41666666
+    functionName: IdleAnimation_S
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class ThorMove : MonoBehaviour
 {
     public float maxSpeed;// 속도
     public float jumpPower; // 점프
@@ -14,7 +14,7 @@ public class Move : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Transform trans;
-    int jumpcount =2; //2단점프
+    int jumpcount = 2; //2단점프
     int Jumpcnt;
     Animator anim;
 
@@ -31,7 +31,7 @@ public class Move : MonoBehaviour
     {
         isground = Physics2D.OverlapCircle(pos.position, radius, layer); //땅에 닿았는가?
 
-        if(isground == false)
+        if (isground == false)
             anim.SetBool("isJump", true);
 
         if (isground == true && Input.GetKeyDown("c") && Jumpcnt > 0) //점프 1
@@ -40,7 +40,6 @@ public class Move : MonoBehaviour
         }
         if (isground == false && Input.GetKeyDown("c") && Jumpcnt > 0) //점프 2
         {
-            anim.SetBool("isJump", true);
             rigid.AddForce(Vector2.up * jumpPower * 0.8f, ForceMode2D.Impulse);
 
         }
@@ -69,11 +68,29 @@ public class Move : MonoBehaviour
         {
             anim.SetBool("isAttack", true);
         }
+
+        if (Input.GetKeyDown("x")) //스킬모션
+        {
+            anim.SetBool("isSkill", true);
+        }
     }
 
+    public void IdleAnimation_W()
+    {
+        if (anim.GetBool("isJump") == true)
+        {
+            anim.SetBool("isWalk", false);
+            Debug.Log("s");
+        }
+    }
     public void IdleAnimation_A()
     {
         anim.SetBool("isAttack", false);
+    }
+
+    public void IdleAnimation_S()
+    {
+        anim.SetBool("isSkill", false);
     }
 
     private void OnDrawGizmos()
@@ -88,7 +105,7 @@ public class Move : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse); //이동
 
-        if (Input.GetAxisRaw("Horizontal")>0)
+        if (Input.GetAxisRaw("Horizontal") > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
@@ -98,7 +115,7 @@ public class Move : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
-        }  
+        }
 
     }
 
