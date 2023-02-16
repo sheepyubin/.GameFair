@@ -1,0 +1,694 @@
+fileFormatVersion: 2
+guid: aa39aab4ed0954f44ac0ec1eb520e377
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Musasi_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 264
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.31074002, y: 0.5044121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8360865043326774ead7d8919321d415
+      internalID: -728489453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 264
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.32044575, y: 0.513649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a264794348e05414aad211247b71542f
+      internalID: -1234132669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 264
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.32044575, y: 0.518198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203768e14266b7845b1a90ece9d730d4
+      internalID: 609005929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 264
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.32044575, y: 0.509099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b9b3aa60d97db45b5127b256da11a1
+      internalID: -1200436085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 264
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.31559244, y: 0.5264698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c91ccc930c232448b9e575e6d3a362b
+      internalID: 515826949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 200
+        width: 23
+        height: 33
+      alignment: 9
+      pivot: {x: 0.393436, y: 0.51714027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcc26963d7cced4585281ef17670a4b
+      internalID: 1742634023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 200
+        width: 36
+        height: 33
+      alignment: 9
+      pivot: {x: 0.70948476, y: 0.5514193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29aa3365bbe0e24b885e2ed5632ba94
+      internalID: -1852405196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 197
+        width: 46
+        height: 36
+      alignment: 9
+      pivot: {x: 0.39753458, y: 0.58903164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7d6169f6f9ad459aba2dea7a8abb6
+      internalID: 1254921522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 200
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.3533605, y: 0.4758293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724f4813df0e7e4781f18e108529be0
+      internalID: -1460313886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_9
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 200
+        width: 30
+        height: 33
+      alignment: 9
+      pivot: {x: 0.3617401, y: 0.5399928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64621af61f258bc4495b8ab9bab2b168
+      internalID: 1116065552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 200
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 0.3518644, y: 0.50608236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981fff4affb6f51408b49d820c129747
+      internalID: -8973990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 136
+        width: 23
+        height: 33
+      alignment: 9
+      pivot: {x: 0.3934362, y: 0.511427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1f65b5add7a4647b2f93b6f6f6856e
+      internalID: 634997440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 136
+        width: 36
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6623508, y: 0.5285668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f890e860d9708e488a6fc15add355a2
+      internalID: 154054459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 133
+        width: 42
+        height: 36
+      alignment: 9
+      pivot: {x: 0.33839744, y: 0.5628459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3d1bfb81f9b964fab69f1872ed98cb
+      internalID: 2138323887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_14
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 136
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.3638348, y: 0.4564921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa10e6bc48a613d449460890d1d7ba95
+      internalID: 869682223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_15
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 136
+        width: 24
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5392787, y: 0.44046262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9949543f8853f204cb00230ebda55923
+      internalID: -609854966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 136
+        width: 20
+        height: 36
+      alignment: 9
+      pivot: {x: 0.6414032, y: 0.48428896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f2a3d3c5b7c534dab24c5a2455422d
+      internalID: 585523136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 72
+        width: 32
+        height: 37
+      alignment: 9
+      pivot: {x: 0.52945894, y: 0.5050956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4837fa567e8c42a4e872b7d2a1ed6cd9
+      internalID: 1712938623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_18
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 72
+        width: 19
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5297695, y: 0.5353508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101279df8615297409eacdc50592b968
+      internalID: -755203283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 72
+        width: 17
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.5285663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49579e14bfaa5449badf17d61440098
+      internalID: -1276465386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_20
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 72
+        width: 19
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55713236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468cfa7931683cb429a351052e4ba8b1
+      internalID: 1285479127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_21
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 72
+        width: 19
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6190764, y: 0.5471344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9616f0cd6ff324e8aea551c7965614
+      internalID: 878013211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_22
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 72
+        width: 20
+        height: 32
+      alignment: 9
+      pivot: {x: 0.660257, y: 0.51767564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6f9b56c20a3024b92f12551c05a7bd
+      internalID: 1671912783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_23
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 8
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824a9f07b2b1d3240b348e0a4fd8433f
+      internalID: -2109224193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 8
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c34732718959a4d905b2754c2ecfab
+      internalID: -430039017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Musasi_25
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 8
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98845cb942b2e864d8ddad4ffea8a17d
+      internalID: 857883455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Musasi_2: 609005929
+      Musasi_5: 1742634023
+      Musasi_11: 634997440
+      Musasi_15: -609854966
+      Musasi_18: -755203283
+      Musasi_24: -430039017
+      Musasi_8: -1460313886
+      Musasi_0: -728489453
+      Musasi_1: -1234132669
+      Musasi_17: 1712938623
+      Musasi_16: 585523136
+      Musasi_12: 154054459
+      Musasi_20: 1285479127
+      Musasi_3: -1200436085
+      Musasi_9: 1116065552
+      Musasi_7: 1254921522
+      Musasi_22: 1671912783
+      Musasi_10: -8973990
+      Musasi_14: 869682223
+      Musasi_19: -1276465386
+      Musasi_13: 2138323887
+      Musasi_23: -2109224193
+      Musasi_21: 878013211
+      Musasi_4: 515826949
+      Musasi_25: 857883455
+      Musasi_6: -1852405196
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
