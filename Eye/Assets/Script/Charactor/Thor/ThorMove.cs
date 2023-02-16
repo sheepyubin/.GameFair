@@ -1,22 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Unity.Burst.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ThorMove : MonoBehaviour
 {
     public float maxSpeed;// 속도
     public float jumpPower; // 점프
-    public Vector2 Range;
-    bool isground;
-    [SerializeField] Transform pos;
-    [SerializeField] float radius;
-    [SerializeField] LayerMask layer;
+    public Vector2 Range; //스킬 범위
+    bool isground; //땅에 닿았는지 체크
+    [SerializeField] Transform pos; //땅에 닿았는지 체크할때 쓰는거
+    [SerializeField] float radius; // pos크기
+    [SerializeField] LayerMask layer; //바닥 레이어 넣으면 된다
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Transform trans;
     int jumpcount = 2; //2단점프
     int Jumpcnt;
     Animator anim;
+
+    //여기부터 스킬
+    [SerializeField] GameObject Skill;//스킬 이펙트 프리팹
+    Collider2D[] hit;
+    [SerializeField] LayerMask Monster; //닿은 레이어 = 몬스터
+    Vector3[] MonsterPos = new Vector3[20]; //몬스터 위치
 
 
     void Awake()
@@ -81,6 +90,15 @@ public class ThorMove : MonoBehaviour
         {
             anim.SetBool("isWalk", false);
             Debug.Log("s");
+        }
+    }
+
+    public void Thor_SKill() {
+        hit = Physics2D.OverlapBoxAll(transform.position, Range, 0, Monster); //몬스터에 닿았는가?
+        for (int i = 0; i < hit.Length; i++)
+        {
+            MonsterPos[i] = hit[i].transform.position;
+            Destroy(Instantiate(Skill, MonsterPos[i], Quaternion.identity), 0.4f);
         }
     }
     public void IdleAnimation_A()

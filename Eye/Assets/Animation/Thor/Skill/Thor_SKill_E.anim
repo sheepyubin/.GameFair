@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thor_Skill - Copy
+  m_Name: Thor_SKill_E
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,15 +20,17 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 71172071412687d4d8ad065fd5b34f9e, type: 2}
+      value: {fileID: 418341743, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: d6fe27500af189a4c959713567c019a9, type: 2}
+      value: {fileID: -1594427112, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 0f8c7610ad8c78e449523488a595b291, type: 2}
+      value: {fileID: -1510267469, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 072f236840097af4283de02e3a0c9504, type: 2}
+      value: {fileID: -1976133414, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 3835ee105bb00b343a6346b48cbafa46, type: 2}
+      value: {fileID: 811287095, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - time: 0.41666666
+      value: {fileID: 156231974, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,17 +50,18 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 71172071412687d4d8ad065fd5b34f9e, type: 2}
-    - {fileID: 21300000, guid: d6fe27500af189a4c959713567c019a9, type: 2}
-    - {fileID: 21300000, guid: 0f8c7610ad8c78e449523488a595b291, type: 2}
-    - {fileID: 21300000, guid: 072f236840097af4283de02e3a0c9504, type: 2}
-    - {fileID: 21300000, guid: 3835ee105bb00b343a6346b48cbafa46, type: 2}
+    - {fileID: 418341743, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - {fileID: -1594427112, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - {fileID: -1510267469, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - {fileID: -1976133414, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - {fileID: 811287095, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
+    - {fileID: 156231974, guid: a84731d2da75be24c9a7133966b856b5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4166667
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,18 +80,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.16666667
-    functionName: Thor_SKill
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.41666666
-    functionName: IdleAnimation_S
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
