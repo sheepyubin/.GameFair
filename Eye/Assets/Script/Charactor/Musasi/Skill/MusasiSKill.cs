@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class MusasiSKill : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed; //검격 스피드
     void Start()
     {
-        
+        Invoke("DestroyArrow", 0.3f);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (transform.rotation.y == 0)
+            transform.Translate(transform.right * speed * Time.deltaTime); //------->
+        else
+            transform.Translate(transform.right * -1 * speed * Time.deltaTime); //------->
+
+
+    }
+
+    void DestroySkill()
+    {
+        Destroy(gameObject);
     }
 
 }

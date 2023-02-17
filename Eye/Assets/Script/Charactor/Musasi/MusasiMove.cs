@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MusasiMove : MonoBehaviour
@@ -18,7 +19,9 @@ public class MusasiMove : MonoBehaviour
     Animator anim;
 
     //여기부터 스킬
-    [SerializeField] GameObject Skill;//스킬 이펙트 프리팹
+    [SerializeField] GameObject Skill_1;//스킬 이펙트 프리팹 1
+    [SerializeField] GameObject Skill_2; //스킬 이펙트 프리팹 2
+    [SerializeField] Transform Skill_Pos; //스킬이 나올 위치
     Collider2D[] hit;
     [SerializeField] LayerMask Monster; //닿은 레이어 = 몬스터
     Vector3[] MonsterPos = new Vector3[20]; //몬스터 위치
@@ -89,10 +92,15 @@ public class MusasiMove : MonoBehaviour
         }
     }
 
-   // public void Musasi_SKill()
-    //{
-       
-    //}
+    public void Musasi_SKill_1() //스킬 1타
+    {
+        Instantiate(Skill_1, Skill_Pos.position, transform.rotation);
+    }
+
+    public void Musasi_SKill_2() //스킬 2타
+    {
+        Instantiate(Skill_2, Skill_Pos.position, transform.rotation);
+    }
     public void IdleAnimation_A()
     {
         anim.SetBool("isAttack", false);
