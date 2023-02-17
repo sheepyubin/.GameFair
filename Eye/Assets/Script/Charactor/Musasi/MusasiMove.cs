@@ -94,12 +94,12 @@ public class MusasiMove : MonoBehaviour
 
     public void Musasi_SKill_1() //스킬 1타
     {
-        Instantiate(Skill_1, Skill_Pos.position, transform.rotation);
+        Destroy(Instantiate(Skill_1, Skill_Pos.position, transform.rotation),2.0f);
     }
 
     public void Musasi_SKill_2() //스킬 2타
     {
-        Instantiate(Skill_2, Skill_Pos.position, transform.rotation);
+        Destroy(Instantiate(Skill_2, Skill_Pos.position, transform.rotation),2.0f);
     }
     public void IdleAnimation_A()
     {

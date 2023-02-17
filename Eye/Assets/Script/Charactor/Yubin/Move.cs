@@ -21,10 +21,10 @@ public class Move : MonoBehaviour
 
     void Awake()
     {
-        rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Jumpcnt = jumpcount;
         anim = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody2D>();
+        Jumpcnt = jumpcount;
     }
 
     void Update()

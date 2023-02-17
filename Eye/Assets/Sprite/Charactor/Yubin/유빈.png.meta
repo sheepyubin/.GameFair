@@ -483,7 +483,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\uC720\uBE48_6": -664097396
+      "\uC720\uBE48_11": 550157477
       "\uC720\uBE48_10": -2046151389
       "\uC720\uBE48_12": -874272782
       "\uC720\uBE48_8": 496051680
@@ -497,8 +497,8 @@ TextureImporter:
       "\uC720\uBE48_1": -810874510
       "\uC720\uBE48_13": -1730042873
       "\uC720\uBE48_2": 637995496
-      "\uC720\uBE48_11": 550157477
       "\uC720\uBE48_5": -1587811334
+      "\uC720\uBE48_6": -664097396
       "\uC720\uBE48_14": -1080303067
   spritePackingTag: 
   pSDRemoveMatte: 0

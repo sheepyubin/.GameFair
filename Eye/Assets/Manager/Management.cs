@@ -7,10 +7,10 @@ public class Management : MonoBehaviour
     public static byte HP;          //캐릭터의 HP
     public static bool LR;          //캐릭터의 좌(TRUE),우(FALSE)
     public static Vector2 CharPos;  //캐릭터의 위치좌표
+    public static byte stage;       //캐릭터의 스테이지 1=1 2=2 3=3 4=BOSS
     float CurPos;                   //과거좌표.X
     float PrevPos;                  //현재좌표.X
 
-    byte stage;
 
     int stage1_monster;                         //스테이지1 몬스터 마리수
     [SerializeField] GameObject stage1_boss;    //스테이지1 중간보스
@@ -22,7 +22,7 @@ public class Management : MonoBehaviour
     public static bool Isstage2_walll;          //스테이지2 벽 T/F
     [SerializeField] GameObject stage2_wall;    //스테이지2 벽
 
-    int stahe3_monster;                         //스테이지3 몬스터 마리수
+    int stage3_monster;                         //스테이지3 몬스터 마리수
     [SerializeField] GameObject stage3_boss;    //스테이지3 중간보스
     public static bool Isstage3_walll;          //스테이지3 벽 T/F
     [SerializeField] GameObject stage3_wall;    //스테이지3 벽
@@ -36,7 +36,7 @@ public class Management : MonoBehaviour
 
         stage1_monster = 14;    //스테이지 1 몬스터 마리수
         stage2_monster = 16;    //스테이지 2 몬스터 마리수
-        stahe3_monster = 19;    //스테이지 3 몬스터 마리수
+        stage3_monster = 19;    //스테이지 3 몬스터 마리수
 
     }
 
@@ -67,11 +67,34 @@ public class Management : MonoBehaviour
                 if(stage1_monster < 0)
                 {
                     Instantiate(stage1_boss);
+                    if(Isstage1_walll == false)
+                    {
+                        Destroy(stage1_wall);
+                        stage = 2;
+                    }
                 }
                 break;
             case 2:
+                if (stage2_monster < 0)
+                {
+                    Instantiate(stage2_boss);
+                    if (Isstage2_walll == false)
+                    {
+                        Destroy(stage2_wall);
+                        stage = 3;
+                    }
+                }
                 break;
             case 3:
+                if (stage3_monster < 0)
+                {
+                    Instantiate(stage3_boss);
+                    if (Isstage3_walll == false)
+                    {
+                        Destroy(stage3_wall);
+                        stage = 4;
+                    }
+                }
                 break;
         }
     }
