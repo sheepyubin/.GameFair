@@ -7,7 +7,7 @@ public class MusasiSKill : MonoBehaviour
     public float speed; //검격 스피드
     void Start()
     {
-        Invoke("DestroyArrow", 0.3f);
+        Invoke("DestroySkill", 0.3f);
     }
 
     void Update()

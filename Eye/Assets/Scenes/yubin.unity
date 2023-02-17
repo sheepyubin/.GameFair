@@ -456,11 +456,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &297522298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8558620904839366815, guid: c664b063c9be2104389093568be90f52, type: 3}
-  m_PrefabInstance: {fileID: 8558620904594414821}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &328154545
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba03cc640e98704bad5a9f5ccc2e7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 297522298}
   center: {x: -1.6, y: 4.98}
   mapSize: {x: 36.09, y: 7.28}
   smoothing: 0.2
@@ -1376,7 +1370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba03cc640e98704bad5a9f5ccc2e7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 297522298}
   center: {x: 87.5, y: 4.91}
   mapSize: {x: 40.85, y: 6.93}
   smoothing: 0.2
@@ -1901,5 +1894,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8558620904839366810, guid: c664b063c9be2104389093568be90f52, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c664b063c9be2104389093568be90f52, type: 3}
+--- !u!1 &8558620904594414822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8558620904839366802, guid: c664b063c9be2104389093568be90f52, type: 3}
+  m_PrefabInstance: {fileID: 8558620904594414821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8558620904594414823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8558620906198953671, guid: c664b063c9be2104389093568be90f52, type: 3}
+  m_PrefabInstance: {fileID: 8558620904594414821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8558620904594414824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8558620904691147671, guid: c664b063c9be2104389093568be90f52, type: 3}
+  m_PrefabInstance: {fileID: 8558620904594414821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8558620904594414825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558620904594414822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3ef7639c2066042a477d1ae7b8c14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 11
+  jumpPower: 15
+  pos: {fileID: 8558620904594414824}
+  radius: 0.9
+  layer:
+    serializedVersion: 2
+    m_Bits: 8
+  Skill_1: {fileID: 5912282216808824204, guid: cc87402b01f6b77459814bfe0bd508f5, type: 3}
+  Skill_2: {fileID: 531617029890290456, guid: e8fa197a8c6b839409bc536d4d4a05d9, type: 3}
+  Skill_Pos: {fileID: 8558620904594414823}
+  Monster:
+    serializedVersion: 2
+    m_Bits: 64
