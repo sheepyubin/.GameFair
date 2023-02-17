@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class YubinMove : MonoBehaviour
 {
     public float maxSpeed;// 속도
     public float jumpPower; // 점프
@@ -29,6 +29,7 @@ public class Move : MonoBehaviour
 
     void Update()
     {
+        Management.CharPos = transform.position;    //캐릭터 좌표 전역변수 할당
         isground = Physics2D.OverlapCircle(pos.position, radius, layer); //땅에 닿았는가?
 
         if(isground == false)
