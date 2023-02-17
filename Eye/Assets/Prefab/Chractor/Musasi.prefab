@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 8558620904839366802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -33.61, y: 0.81, z: 0}
-  m_LocalScale: {x: 12.200315, y: 12.200315, z: 12.200315}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8558620904691147671}
@@ -246,9 +246,6 @@ MonoBehaviour:
   Skill_1: {fileID: 5912282216808824204, guid: cc87402b01f6b77459814bfe0bd508f5, type: 3}
   Skill_2: {fileID: 531617029890290456, guid: e8fa197a8c6b839409bc536d4d4a05d9, type: 3}
   Skill_Pos: {fileID: 8558620906198953671}
-  Monster:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &8558620906198953668
 GameObject:
   m_ObjectHideFlags: 0
