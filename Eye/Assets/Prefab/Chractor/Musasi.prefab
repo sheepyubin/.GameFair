@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 8558620904839366808}
   - component: {fileID: 8558620904839366809}
   - component: {fileID: 8558620904839366811}
-  - component: {fileID: 8558620904839366810}
+  - component: {fileID: 9127540107938422607}
   m_Layer: 7
   m_Name: Musasi
   m_TagString: Player
@@ -224,7 +224,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8558620904839366810
+--- !u!114 &9127540107938422607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,13 +233,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8558620904839366802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6033b376ca28dc40a7f1356f05bbdd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f3ef7639c2066042a477d1ae7b8c14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 11
+  MoveSpeed: 11
   jumpPower: 15
   pos: {fileID: 8558620904691147671}
-  radius: 0.9
+  radius: 0.81
   layer:
     serializedVersion: 2
     m_Bits: 8

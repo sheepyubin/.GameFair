@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusasiMove : MonoBehaviour
+public class MagicianMove : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
     Rigidbody2D rigid;
@@ -19,9 +19,10 @@ public class MusasiMove : MonoBehaviour
     [SerializeField] float radius;      //착지체크범위의 크기(반지름)
     [SerializeField] LayerMask layer;   //바닥 레이어마스크
 
-    [SerializeField] GameObject Skill_1;    //스킬 이펙트 1
-    [SerializeField] GameObject Skill_2;    //스킬 이펙트 2
+    [SerializeField] GameObject Skill;    //스킬 이펙트
     [SerializeField] Transform Skill_Pos;   //스킬 시작위치
+    [SerializeField] GameObject Attack;    //평타 투사체
+    [SerializeField] Transform Attack_Pos;   //평타 시작위치
 
     void Awake() //기본 세팅
     {
@@ -31,15 +32,21 @@ public class MusasiMove : MonoBehaviour
         Jumptemp = jumpcount;
     }
 
-    public void Musasi_SKill_1()    //스킬 1타 생성
-    { Instantiate(Skill_1, Skill_Pos.position, transform.rotation); }
-    public void Musasi_SKill_2()    //스킬 2타 생성
-    { Instantiate(Skill_2, Skill_Pos.position, transform.rotation); }
+    public void Magician_SKill()    //스킬 생성
+    { Instantiate(Skill, Skill_Pos.position, transform.rotation); }
+
+    public void Magician_Attack()    //평타 투사체 생성
+    { Instantiate(Attack,Attack_Pos.position, transform.rotation); }
 
     public void IdleAnimation_A()   //어택애니 초기화
     { anim.SetBool("isAttack", false); }
     public void IdleAnimation_S()   //스킬애니 초기화
     { anim.SetBool("isSkill", false); }
+    private void OnDrawGizmos() //Pos 그리기
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(pos.position, radius);
+    }
 
     void Update()
     {
@@ -53,7 +60,7 @@ public class MusasiMove : MonoBehaviour
             Jumptemp--;
         }
 
-        if(Isground)
+        if (Isground)
         {
             Jumptemp = jumpcount;
             anim.SetBool("isJump", false);
@@ -91,11 +98,5 @@ public class MusasiMove : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 180, 0);
             rigid.velocity = new Vector2(MoveSpeed * (-1), rigid.velocity.y);
         }
-    }
-
-    private void OnDrawGizmos() //Pos 그리기
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(pos.position, radius);
     }
 }

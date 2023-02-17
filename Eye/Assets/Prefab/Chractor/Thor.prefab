@@ -236,15 +236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1c078edcb816a4288d3dce08d71ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 11
+  MoveSpeed: 11
   jumpPower: 15
-  Range: {x: 12.23, y: 8.61}
   pos: {fileID: 4459153935342749797}
   radius: 0.5
   layer:
     serializedVersion: 2
     m_Bits: 8
   Skill: {fileID: 5155897676720046200, guid: eb3c7721906189348ac931f276b696b1, type: 3}
+  Range: {x: 12.23, y: 8.61}
   Monster:
     serializedVersion: 2
     m_Bits: 64
