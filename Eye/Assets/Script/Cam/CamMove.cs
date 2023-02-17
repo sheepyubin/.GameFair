@@ -5,8 +5,6 @@ using UnityEngine;
 public class CamMove : MonoBehaviour
 {
     private Vector3 cameraPosition;
-    [SerializeField]
-    Transform Player;
 
     [SerializeField]
     Vector2 center;
@@ -25,7 +23,7 @@ public class CamMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 targetPos = new Vector3(Player.position.x, Player.position.y, this.transform.position.z);
+        Vector3 targetPos = new Vector3(Management.CharPos.x, Management.CharPos.y, this.transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
         LimitCameraArea();
     }

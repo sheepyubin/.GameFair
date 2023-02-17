@@ -5,11 +5,8 @@ using UnityEngine;
 public class Management : MonoBehaviour
 {
     public static byte HP;          //캐릭터의 HP
-    public static bool LR;          //캐릭터의 좌(TRUE),우(FALSE)
-    public static Vector2 CharPos;  //캐릭터의 위치좌표
+    public static Vector3 CharPos;  //캐릭터의 위치좌표
     public static byte stage;       //캐릭터의 스테이지 1=1 2=2 3=3 4=BOSS
-    float CurPos;                   //과거좌표.X
-    float PrevPos;                  //현재좌표.X
 
 
     int stage1_monster;                         //스테이지1 몬스터 마리수
@@ -29,9 +26,7 @@ public class Management : MonoBehaviour
 
     void Start()
     {
-        CurPos = CharPos.x;
         HP = 100;               //기본캐(유빈) HP 100
-        LR = false;             //기본 오른쪽
         stage = 1;
 
         stage1_monster = 14;    //스테이지 1 몬스터 마리수
@@ -42,23 +37,8 @@ public class Management : MonoBehaviour
 
     void Update()
     {
-        LRcomparison();
-
+        Stagemaneger();
     }
-
-    void LRcomparison()
-    {
-        PrevPos = CharPos.x;
-
-        if (CurPos < PrevPos)       //과거의 X값보다 현재의 X값이 작다면(좌)
-        { LR = true; }
-
-        else if (CurPos > PrevPos)  //과거의 X값보다 현재의 X값이 크다면(우)
-        { LR = false; }
-
-        CurPos = PrevPos;
-    }
-
     void Stagemaneger()
     {
         switch(stage)
