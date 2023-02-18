@@ -20,10 +20,7 @@ public class RobinMove : MonoBehaviour
     [SerializeField] Transform pos;     //착지체크범위
     [SerializeField] float radius;      //착지체크범위의 크기(반지름)
     [SerializeField] LayerMask layer;   //바닥 레이어마스크
-
-    public Vector2 Range; //스킬 범위
-    Collider2D[] hit; // 몬스터 감지
-    Vector3[] MonsterPos = new Vector3[1]; //몬스터 위치
+    
     [SerializeField] LayerMask Monster;     //몬스터 탐색
     [SerializeField] GameObject Skill;    //스킬 이펙트
     [SerializeField] Transform Skill_Pos;   //스킬 시작위치
@@ -40,14 +37,7 @@ public class RobinMove : MonoBehaviour
 
     public void Robin_SKill()    //스킬 생성
     {
-        hit = Physics2D.OverlapBoxAll(transform.position, Range, 0, Monster); //몬스터에 닿았는가?
-        for (int i = 0; i < hit.Length; i++)
-        {
-            MonsterPos[i] = hit[i].transform.position;
-            Debug.Log("s");
-            Debug.Log(MonsterPos[i].x); Debug.Log(MonsterPos[i].y);
-            Destroy(Instantiate(Skill, MonsterPos[i], Quaternion.identity), 0.4f);
-        }
+        Instantiate(Skill, Skill_Pos.position, transform.rotation);
     }
 
     public void Robin_Attack()    //평타 투사체 생성
@@ -61,7 +51,6 @@ public class RobinMove : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(pos.position, radius);
-        Gizmos.DrawWireCube(transform.position, Range);
     }
 
     void Update()

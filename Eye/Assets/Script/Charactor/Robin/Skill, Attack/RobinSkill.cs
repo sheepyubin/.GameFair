@@ -1,25 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class RobinSkill : MonoBehaviour
 {
-    public float speed = 10f;
-    public float verticalSpeed = 5f;
-    public Rigidbody2D rb; 
-    public Transform monster;
+    const float speed = 9f; // 스피드
+    const float gravity = -20f; // 화살에 미치는 중력 계수
+    const float angle = 45f; // 발사각도
+    private float time; //
+    private Vector2 velocity; //
 
     void Start()
     {
-        Vector2 direction = (monster.position - transform.position).normalized;
-        float distance = Vector2.Distance(transform.position, monster.position);
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.velocity = new Vector2(speed * Mathf.Cos(angle * Mathf.Deg2Rad), speed * Mathf.Sin(angle * Mathf.Deg2Rad) + verticalSpeed);
-        rb.gravityScale = distance / 10f;
+        Invoke("DestroySkill", 0.7f);
+        float radians = angle * Mathf.Deg2Rad;
+        velocity.x = speed * Mathf.Cos(radians);
+        velocity.y = speed * Mathf.Sin(radians);
     }
 
     void Update()
     {
-    
+        Vector2 position = transform.position;
+
+        if (transform.rotation.y == 0)
+            position.x += velocity.x * Time.deltaTime*speed;
+        else
+            position.x -= velocity.x * Time.deltaTime * speed;
+
+        position.y += velocity.y * Time.deltaTime + 0.007f * gravity * Mathf.Pow(time, 2f);
+
+        transform.position = position;
+
+        time += Time.deltaTime;
+    }
+
+    void DestroySkill()
+    {
+        Destroy(gameObject);
     }
 }

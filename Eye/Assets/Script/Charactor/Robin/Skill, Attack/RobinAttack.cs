@@ -4,22 +4,35 @@ using UnityEngine;
 
 public class RobinAttack : MonoBehaviour
 {
-    public float speed; //투사체 스피드
+    const float speed = 8f; // 스피드
+    const float gravity = -25f; // 화살에 미치는 중력 계수
+    const float angle = 45f; // 발사각도
+    private float time; //
+    private Vector2 velocity; //
+
     void Start()
     {
-        Invoke("DestroyAttack", 0.4f);
+        Invoke("DestroyAttack", 0.6f);
+        float radians = angle * Mathf.Deg2Rad;
+        velocity.x = speed * Mathf.Cos(radians);
+        velocity.y = speed * Mathf.Sin(radians);
     }
 
     void Update()
     {
+        Vector2 position = transform.position;
+
         if (transform.rotation.y == 0)
-            transform.Translate(transform.right * speed * Time.deltaTime); //------->
+            position.x += velocity.x * Time.deltaTime * speed;
         else
-            transform.Translate(transform.right * -1 * speed * Time.deltaTime); //------->
+            position.x -= velocity.x * Time.deltaTime * speed;
 
+        position.y += velocity.y * Time.deltaTime + 0.007f * gravity * Mathf.Pow(time, 2f);
 
+        transform.position = position;
+
+        time += Time.deltaTime;
     }
-
     void DestroyAttack()
     {
         Destroy(gameObject);
