@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Management : MonoBehaviour
 {
-    public static byte HP;          //캐릭터의 HP
+    static public byte MaxHP;       //캐릭터의 최대 HP
+    static public byte NOWHP;       //캐릭터의 현재 HP
     public static Vector3 CharPos;  //캐릭터의 위치좌표
     public static byte stage;       //캐릭터의 스테이지 1=1 2=2 3=3 4=BOSS
 
@@ -26,7 +27,6 @@ public class Management : MonoBehaviour
 
     void Start()
     {
-        HP = 100;               //기본캐(유빈) HP 100
         stage = 1;
 
         stage1_monster = 14;    //스테이지 1 몬스터 마리수
