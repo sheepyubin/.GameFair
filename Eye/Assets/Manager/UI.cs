@@ -13,8 +13,7 @@ public class UI : MonoBehaviour
     [SerializeField] GameObject Eye7_Artemis;
     [SerializeField] GameObject Eye8_Reaper;
 
-    static public byte MaxHP;
-    static public byte NOWHP;
+    
 
 
 
